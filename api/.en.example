@@ -1,0 +1,80 @@
+# AI Art Generator Environment Variables
+# Copy this file to .env and fill in your actual values
+
+# Server Configuration
+NODE_ENV=development
+PORT=3000
+API_BASE_URL=http://localhost:3000
+
+# AI Model API Keys
+STABILITY_API_KEY=your_stability_api_key_here
+OPENAI_API_KEY=your_openai_api_key_here
+MIDJOURNEY_API_KEY=your_midjourney_api_key_here
+CUSTOM_MODEL_API_KEY=your_custom_model_api_key_here
+
+# Model Endpoints (optional - uses defaults if not specified)
+SDXL_ENDPOINT=https://api.stability.ai/v1/generation/stable-diffusion-xl-1024-v1-0/text-to-image
+SD2_ENDPOINT=https://api.stability.ai/v1/generation/stable-diffusion-512-v2-1/text-to-image
+MIDJOURNEY_ENDPOINT=your_midjourney_endpoint_here
+CUSTOM_MODEL_ENDPOINT=your_custom_model_endpoint_here
+
+# Database Configuration
+DB_TYPE=mongodb
+DATABASE_URI=mongodb://localhost:27017/ai-art-generator
+# For production, use a connection string like:
+# DATABASE_URI=mongodb+srv://username:password@cluster.mongodb.net/dbname
+
+# Redis Cache (optional)
+REDIS_HOST=localhost
+REDIS_PORT=6379
+REDIS_PASSWORD=
+
+# Storage Configuration
+STORAGE_TYPE=local
+# For S3 storage:
+S3_BUCKET=your-bucket-name
+S3_REGION=us-east-1
+S3_ACCESS_KEY=your_s3_access_key
+S3_SECRET_KEY=your_s3_secret_key
+
+# For Cloudinary storage:
+CLOUDINARY_CLOUD_NAME=your_cloud_name
+CLOUDINARY_API_KEY=your_cloudinary_api_key
+CLOUDINARY_API_SECRET=your_cloudinary_api_secret
+
+# Security
+JWT_SECRET=change-this-to-a-random-string-in-production
+ALLOWED_ORIGINS=http://localhost:3000,http://localhost:8080
+
+# Social Media Integration (optional)
+TWITTER_API_KEY=your_twitter_api_key
+TWITTER_API_SECRET=your_twitter_api_secret
+INSTAGRAM_API_KEY=your_instagram_api_key
+INSTAGRAM_API_SECRET=your_instagram_api_secret
+PINTEREST_API_KEY=your_pinterest_api_key
+PINTEREST_API_SECRET=your_pinterest_api_secret
+
+# Analytics (optional)
+GA_ENABLED=false
+GA_TRACKING_ID=UA-XXXXXXXXX-X
+
+# Rate Limiting
+RATE_LIMIT_WINDOW_MS=60000
+RATE_LIMIT_MAX_REQUESTS=10
+
+# Email Configuration (optional)
+SMTP_HOST=smtp.gmail.com
+SMTP_PORT=587
+SMTP_USER=your_email@gmail.com
+SMTP_PASS=your_app_password
+
+# Payment Integration (optional)
+STRIPE_PUBLIC_KEY=pk_test_xxxxx
+STRIPE_SECRET_KEY=sk_test_xxxxx
+
+# Feature Flags
+ENABLE_BATCH_GENERATION=true
+ENABLE_INPAINTING=true
+ENABLE_UPSCALING=true
+ENABLE_CLOUD_SYNC=false
+ENABLE_NFT_MINTING=false
