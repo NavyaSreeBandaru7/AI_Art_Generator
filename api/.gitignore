@@ -1,0 +1,131 @@
+# Dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Environment Variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+
+# Production build
+dist/
+build/
+out/
+.next/
+.nuxt/
+.cache/
+
+# Uploads and generated files
+uploads/
+generated/
+temp/
+*.tmp
+
+# IDE and Editor files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Logs
+logs/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+.coverage
+
+# Database
+*.sqlite
+*.sqlite3
+*.db
+data/
+
+# Cache
+.cache/
+.parcel-cache/
+.eslintcache
+.stylelintcache
+
+# OS Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# Python (if using Python backend)
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+.venv
+pip-log.txt
+pip-delete-this-directory.txt
+
+# Docker
+.dockerignore
+docker-compose.override.yml
+
+# Backup files
+*.backup
+*.bak
+*.old
+
+# SSL Certificates
+*.pem
+*.key
+*.crt
+*.cer
+
+# Package files
+*.jar
+*.war
+*.nar
+*.ear
+*.zip
+*.tar.gz
+*.rar
+
+# API Keys and Secrets
+secrets/
+config/secrets.json
+api_keys.json
+
+# Generated documentation
+docs/api/
+docs/generated/
+
+# Monitoring
+.monitors/
+metrics/
+
+# Temporary files
+tmp/
+temp/
+.tmp/
+
+# Lock files (keep package-lock.json)
+yarn.lock
+pnpm-lock.yaml
